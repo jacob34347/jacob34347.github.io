@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Fjalla One', sans-serif;
+    src: url('https://singjacob.github.io/islt_7355/FjallaOne-Regular.tff');
+
+}
+
+* {
+    font-family: "helvetica", "sans serif";
+}
+.heading {color: #80DDFF;}
+.fontI {font-style: italic;
+    padding-right: 2px;
+}
+.indent {text-indent: 50px;}
+.paragraph {
+    margin: 15px 15px 15px 15px;
+    padding: 12px 12px 12px 12px;
+}
+
+blockquote {
+    padding: 10px 10px 10px 10px;
+    
+}
+.header {
+    
+    background-color: #E6FAFF;
+    grid-column: 1/6;
+    
+    
+}
+
+.header > h1 {
+    float: left;
+    padding-top: 15px;
+    font-size: 2em;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+footer {
+    grid-column: 1/6;
+    background-color: #E6FAFF;
+    text-align: center;
+}
+
+#topimage {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    padding-top: 50px;
+}
+
+#sideimage {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    padding-top: 50px;
+}
+
+main {
+    grid-row: 2/5;
+    grid-column: 2/5;
+}
+
+#mainAbout {
+    grid-row: 2/5;
+    grid-column: 3/5;
+}
+
+#mainHome {
+    grid-row: 3/5;
+    grid-column: 2/5;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 5fr 1fr 2fr;
+    grid-template-rows: 5fr 10fr 40fr 5fr;
+}
+
+@media screen and (max-width: 350px) { 
+    p {
+        font-size: 1.15rem;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    p {
+        font-size: 1.5rem;
+        line-height: 1.15;
+    }
+    
+}
