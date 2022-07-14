@@ -1,0 +1,120 @@
+* {
+    margin-top: 0;
+}
+
+#navi {
+    text-align: right;
+}
+
+#menu {
+    
+    display: inline-block;
+    margin-top: 0;
+    list-style-type: none;
+    background-color: #E6FAFF;
+    position: relative;
+    height: 75px;
+}
+#menu > li {
+    
+    display: inline-block;
+    padding: 30px 30px 30px 30px;
+    
+    
+}
+
+#menu > li > a {
+    display: inline-block;
+    text-decoration: none;
+    color: #6B97B3;
+    font-family: "helvetica", sans-serif;
+    font-size: 15px;
+
+}
+
+#menu > li > a:hover {
+    color: #364E59;
+}
+
+#dropdown {
+    position: absolute;
+    list-style-type: none;
+    display: none;
+    padding: 10px 10px 10px 10px;
+    width: 75px;
+    border-style: black;
+    text-align: center;
+    transition: 0.5s;
+    
+
+}
+
+#dropdown > li {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 18px 14px
+}
+
+#dropdown > li:hover {
+    background-color: #f3f3f3;
+}
+
+#menu > li:hover > ul {
+    display: block;
+    background-color: #ffffff;
+    border: 2px solid black;
+    
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    line-height: 70px;
+    display: none
+}
+
+#toggle {
+    display: none;
+}
+
+/* Block display will not appear with current code below; instead, links are scattered. */
+
+@media screen and (max-width: 845px) {
+    .header {
+        height: 40px;
+        width: 100%;
+        padding-bottom: 35px;
+
+    }
+
+    .header > h1 {
+        padding-top: 15px;
+    }
+    
+    label {
+        display: inline-block;
+        font-size: 2em;
+        cursor: pointer;
+        width: 25px;
+    
+
+    }
+
+    #menu a {
+        display: block;
+        border-bottom: #364E59;
+        box-sizing: border-box;
+        z-index: 1;
+        width: 100%;
+        border-top: 1px solid black;
+        
+    }
+    
+#menu {display: none;}
+
+#navi input:checked ~ #menu {
+    display: block;
+}
+
+}
